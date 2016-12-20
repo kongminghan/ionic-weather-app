@@ -1,0 +1,15 @@
+<ion-view title="Weather Tab Page" id="page2">
+  <ion-content padding="true" class="has-header">
+    <form id="weatherTabPage-form1" class="list">
+      <label class="item item-input" id="weatherTabPage-input1">
+        <input type="text" placeholder="city" ng-model="city.value">
+      </label>
+    </form>
+    <button ng-click="getWeather(city)" id="weatherTabPage-button1" class="button button-positive  button-block">Get Weather!</button>
+    <ion-item ng-repeat="weather in weathers">
+      <h1 id="weatherTabPage-heading1" style="color:#000000;">Temp: {{weather.info}}</h1>
+      <img ng-src="{{weather.imgUrl}}"/>
+      <h3 style="color:#000000;">{{weather.description}}</h3>
+    </ion-item>
+  </ion-content>
+</ion-view>

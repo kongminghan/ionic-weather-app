@@ -1,0 +1,11 @@
+<ion-view title="Forecast Tab Page" id="page4">
+  <ion-content padding="true" class="has-header">
+    <ion-item ng-repeat="weather in weathers">
+    <ion-list id="forecastTabPage-list1">
+      <h1 id="weatherTabPage-heading1" style="color:#000000;">{{weather.day}},Temp: {{weather.info}}</h1>
+      <img ng-src="{{weather.imgUrl}}"/>
+      <h3 style="color:#000000;">{{weather.description}}</h3>
+    </ion-list>
+  </ion-item>
+  </ion-content>
+</ion-view>
